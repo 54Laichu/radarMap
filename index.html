@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Skills Radar Chart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .dropdown {
+      margin: 5px;
+    }
+    .chart-label {
+      font-size: 1.2em; /* Larger font size for labels */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label for="subjectSkill">學科力:</label>
+    <select id="subjectSkill" class="dropdown">
+      <option value="excellent">優秀</option>
+      <option value="good">良好</option>
+      <option value="average">好</option>
+      <option value="improve">需加強</option>
+      <option value="needsWork">需改善</option>
+    </select>
+    <label for="focusedSkill">專心度:</label>
+    <select id="focusedSkill" class="dropdown">
+      <option value="excellent">優秀</option>
+      <option value="good">良好</option>
+      <option value="average">好</option>
+      <option value="improve">需加強</option>
+      <option value="needsWork">需改善</option>
+    </select>
+    <label for="comprehensionSkill">理解度:</label>
+    <select id="comprehensionSkill" class="dropdown">
+      <option value="excellent">優秀</option>
+      <option value="good">良好</option>
+      <option value="average">好</option>
+      <option value="improve">需加強</option>
+      <option value="needsWork">需改善</option>
+    </select>
+    <label for="reactionSkill">反應力:</label>
+    <select id="reactionSkill" class="dropdown">
+      <option value="excellent">優秀</option>
+      <option value="good">良好</option>
+      <option value="average">好</option>
+      <option value="improve">需加強</option>
+      <option value="needsWork">需改善</option>
+    </select>
+    <label for="participationSkill">參與度:</label>
+    <select id="participationSkill" class="dropdown">
+      <option value="excellent">優秀</option>
+      <option value="good">良好</option>
+      <option value="average">好</option>
+      <option value="improve">需加強</option>
+      <option value="needsWork">需改善</option>
+    </select>
+  </div>
+  <div class="chart-label">
+    <canvas id="radarChart" width="400" height="400"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
